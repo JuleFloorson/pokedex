@@ -1,0 +1,20 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "Pokedex example",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuleFloorson/pokedex.git"
+  },
+  "keywords": [],
+  "author": "Julia Bodensohn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuleFloorson/pokedex/issues"
+  },
+  "homepage": "https://github.com/JuleFloorson/pokedex#readme"
+}
