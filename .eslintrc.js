@@ -3,8 +3,8 @@ module.exports = {
     browser: true,
     es6: true
   },
-  plugin: ['prettier'],
-  extends: ['eslint:recommended', 'plugin:trettier/recommmended'],
+  plugins: ['prettier'],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly'
