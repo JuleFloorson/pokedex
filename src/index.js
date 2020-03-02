@@ -1,4 +1,4 @@
 import './index.scss';
-import { pokemon } from './components/pokemon';
+import { headline } from './components/headline';
 
-document.body.appendChild(pokemon());
+document.body.appendChild(headline());
