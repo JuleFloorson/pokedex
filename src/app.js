@@ -5,7 +5,44 @@ import { createSearch } from './components/search';
 import pokeballImage from './pictures/pokeball.png';
 import { pokemons } from './components/pokemons';
 
-const allPokemons = ['Pikachu', 'Pichu', 'Mewto', 'Schiggy', 'Glumanda'];
+const allPokemons = [
+  'Bisasam',
+  'Bisaknosp',
+  'Bisaflor',
+  'Glumanda',
+  'Glutexo',
+  'Glurak',
+  'Schiggi',
+  'Schillok',
+  'Turtok',
+  'Raupy',
+  'Safcon',
+  'Smettbo',
+  'Hornilu',
+  'Korkuna',
+  'Bibor',
+  'Taubsi',
+  'Tauboga',
+  'Tauboss',
+  'Rattfratz',
+  'Rattikarl',
+  'Habitak',
+  'Ibitak',
+  'Rettan',
+  'Arbok',
+  'Pikachu',
+  'Raichu',
+  'Sandan',
+  'Sandamer',
+  'Nidoran',
+  'Nidorina',
+  'Nidoqueen',
+  'Nidoran',
+  'Nidorino',
+  'Nidoking',
+  'Piepi',
+  'Pixi'
+];
 
 export function app() {
   //create elements header main container
