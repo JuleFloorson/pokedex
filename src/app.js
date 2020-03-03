@@ -8,19 +8,28 @@ import { pokemons } from './components/pokemons';
 const allPokemons = ['Pikachu', 'Pichu', 'Mewto', 'Schiggy', 'Glumanda'];
 
 export function app() {
-  const header = createElement('header', { className: 'header' });
+  //create elements header main container
   const main = createElement('main', { className: 'main' });
+  const pokedexContainer = createElement('div', {
+    className: 'pokedexcontainer'
+  });
+  const pokedexHead = createElement('div', { className: 'pokehead' });
+  const pokedexMain = createElement('div', { className: 'pokemain' });
+  main.appendChild(pokedexContainer);
+  pokedexContainer.appendChild(pokedexHead);
+  pokedexContainer.appendChild(pokedexMain);
 
   const headlineElement = createHeadline('Pokedex');
   const searchElement = createSearch();
-  header.appendChild(headlineElement);
-  main.appendChild(searchElement);
+  pokedexHead.appendChild(headlineElement);
+  pokedexMain.appendChild(searchElement);
+
   let searchResults = pokemons(allPokemons);
 
-  main.appendChild(searchResults);
+  pokedexMain.appendChild(searchResults);
 
   searchElement.addEventListener('input', event => {
-    main.removeChild(searchResults);
+    pokedexMain.removeChild(searchResults);
     const searchValue = event.target.value;
     const filterPokemons = allPokemons.filter(pokemon => {
       return pokemon.startsWith(searchValue);
@@ -28,7 +37,7 @@ export function app() {
 
     searchResults = pokemons(filterPokemons);
 
-    main.appendChild(searchResults);
+    pokedexMain.appendChild(searchResults);
   });
 
   const myImage = createElement('img', {
@@ -36,7 +45,7 @@ export function app() {
     src: pokeballImage
   });
 
-  header.appendChild(myImage);
+  pokedexHead.appendChild(myImage);
 
-  return [header, main]; // Array
+  return [main]; // Array
 }

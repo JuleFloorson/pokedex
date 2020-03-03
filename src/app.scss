@@ -1,15 +1,31 @@
-.main {
+.pokemain {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .pokeimage {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+  margin: 30px;
 }
-.header {
+.pokehead {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
+}
 
+.pokedexcontainer {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  width: 700px;
+  margin: 20px;
+  background-color: rgb(223, 0, 0);
+  border-radius: 50px;
+  box-shadow: 4px 4px 4px rgb(128, 1, 1), -4px -4px 4px rgb(251, 116, 116);
+}
+.main {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
