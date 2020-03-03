@@ -27,6 +27,7 @@ module.exports = {
           // Translates CSS into CommonJS
           'css-loader',
           // Compiles Sass to CSS
+
           {
             loader: 'sass-loader',
             options: {
@@ -34,6 +35,7 @@ module.exports = {
               implementation: require('sass')
             }
           }
+
         ]
       }
     ]

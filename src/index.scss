@@ -1,0 +1,11 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Itim|Monoton|Nosifer|Permanent+Marker|Rock+Salt&display=swap');
+body {
+  margin: 0;
+  background-image: linear-gradient(to bottom right, #fff, #9ef0ff);
+  height: 100vh;
+}
