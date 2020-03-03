@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pokeimage {
+  width: 100px;
+  height: 100px;
+}
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+
+  align-items: center;
+}

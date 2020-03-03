@@ -1,7 +1,7 @@
 import './headline.scss';
 import { createElement } from '../lib/dom';
 
-export function headline() {
+export function createHeadline() {
   const headlineAttributes = {
     innerText: 'Pokedex',
     className: 'headline'
