@@ -1,6 +1,9 @@
 import './index.scss';
-import { headline } from './components/headline';
-import { search } from './components/search';
+import { app } from './app';
 
-document.body.appendChild(headline());
-document.body.appendChild(search());
+const elements = app();
+elements.forEach(element => {
+  document.body.appendChild(element);
+});
+
+// elements.forEach(document.body.appendChild);
