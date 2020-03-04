@@ -4,10 +4,15 @@
   align-items: center;
 }
 .pokeimage {
-  width: 80px;
-  height: 80px;
-  margin: 30px;
+  height: 100px;
+  margin: 20px;
 }
+
+// // .pokeballimage {
+// //   height: 80px;
+// //   width: 80px;
+// //   margin: 25px;
+// }
 .pokehead {
   display: flex;
   flex-direction: row-reverse;

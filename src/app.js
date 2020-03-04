@@ -1,8 +1,9 @@
 import './app.scss';
 import { createElement } from './lib/dom';
-import { createHeadline } from './components/headline';
+//import { createHeadline } from './components/headline';
 import { createSearch } from './components/search';
-import pokeballImage from './pictures/pokeball.png';
+import pokemonImage from './pictures/pokemonlogo.png';
+// import pokeballImage from './pictures/pokeball.png';
 import { pokemons } from './components/pokemons';
 import { appendContent } from './lib/dom';
 
@@ -68,17 +69,24 @@ export function app() {
   pokedexContainer.appendChild(pokedexHead);
   pokedexContainer.appendChild(pokedexMain);
 
-  const headlineElement = createHeadline('Pokedex');
+  //const headlineElement = createHeadline('Pokedex');
   const searchElement = createSearch(sessionStorage.getItem('searchValue'));
-  pokedexHead.appendChild(headlineElement);
+  //pokedexHead.appendChild(headlineElement);
   pokedexMain.appendChild(searchElement);
 
-  const myImage = createElement('img', {
+  const pokemImage = createElement('img', {
     className: 'pokeimage',
-    src: pokeballImage
+    src: pokemonImage
   });
+  // const pokebImage = createElement('img', {
+  //   className: 'pokeballimage',
+  //   src: pokeballImage
+  // });
+
   //
-  pokedexHead.appendChild(myImage);
+
+  pokedexHead.appendChild(pokemImage);
+  // pokedexHead.appendChild(pokebImage);
   //ende create elements
   //
   let searchResults = null;
