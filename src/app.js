@@ -69,7 +69,7 @@ export function app() {
     pokedexMain.removeChild(searchResults);
     const searchValue = event.target.value;
     const filterPokemons = allPokemons.filter(pokemon => {
-      return pokemon.startsWith(searchValue);
+      return pokemon.toLowerCase().startsWith(searchValue.toLowerCase());
     });
 
     searchResults = pokemons(filterPokemons);
