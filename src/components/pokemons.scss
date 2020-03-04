@@ -7,6 +7,14 @@
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;
   font-family: 'Press Start 2P', cursive;
+
+  &:hover {
+    background: green;
+  }
+
+  &:active {
+    background: green;
+  }
 }
 
 .pokemons {
