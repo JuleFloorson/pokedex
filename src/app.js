@@ -5,8 +5,7 @@ import { createSearch } from './components/search';
 import pokemonImage from './pictures/pokemonlogo.png';
 import { pokemons } from './components/pokemons';
 import { appendContent } from './lib/dom';
-
-//
+import { favouritePokemons } from './components/favourites';
 
 export function app() {
   //create elements header main container
@@ -21,7 +20,6 @@ export function app() {
   pokedexContainer.appendChild(pokedexMain);
 
   const searchElement = createSearch(sessionStorage.getItem('searchElement'));
-
   pokedexMain.appendChild(searchElement);
 
   const pokemImage = createElement('img', {
@@ -37,18 +35,21 @@ export function app() {
     searchResults = pokemons(filteredPokemons);
     appendContent(pokedexMain, searchResults);
   }
-  //
+
   setSearchResults();
 
   pokedexMain.appendChild(searchResults);
 
-  //eventlistenerfunktion
   searchElement.addEventListener('input', event => {
     pokedexMain.removeChild(searchResults);
     setSearchResults();
     const searchValue = event.target.value;
     sessionStorage.setItem('searchElement', searchValue);
   });
+
+  const favouriteElement = favouritePokemons();
+  console.log(favouriteElement);
+  pokedexMain.appendChild(favouriteElement);
 
   return [main];
 }

@@ -1,0 +1,11 @@
+.favouritepokes {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: black;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px rgb(255, 153, 153), -3px -3px 3px rgb(126, 1, 1);
+}
