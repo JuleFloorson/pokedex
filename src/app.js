@@ -44,7 +44,7 @@ export function app() {
 
   //eventlistenerfunktion
   searchElement.addEventListener('input', event => {
-    main.removeChild(pokemons);
+    pokedexMain.removeChild(searchResults);
     setSearchResults();
     const searchValue = event.target.value;
     sessionStorage.setItem('searchElement', searchValue);

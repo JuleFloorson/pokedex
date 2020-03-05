@@ -12,7 +12,9 @@ export function pokemons(items) {
       className: 'pokemon'
     });
     element.addEventListener('click', () => {
-      const favourites = [item];
+      const favourites = JSON.parse(localStorage.getItem('favourites')) || [];
+      favourites.push(item);
+
       localStorage.setItem('favourites', JSON.stringify(favourites));
     });
     container.appendChild(element);
