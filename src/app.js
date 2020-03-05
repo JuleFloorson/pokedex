@@ -20,7 +20,7 @@ export function app() {
   pokedexContainer.appendChild(pokedexHead);
   pokedexContainer.appendChild(pokedexMain);
 
-  const searchElement = createSearch(sessionStorage.getItem('searchValue'));
+  const searchElement = createSearch(sessionStorage.getItem('searchElement'));
 
   pokedexMain.appendChild(searchElement);
 
